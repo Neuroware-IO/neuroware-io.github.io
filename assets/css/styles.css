@@ -1,0 +1,570 @@
+/*
+
+RESETS
+
+*/
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: 0;
+}
+p.copy {
+    display: block;
+    position: relative;
+    padding: 10px 200px 30px;
+    font-size: 15px;
+}
+p.copy.pull-back {
+    margin-bottom: -80px;
+}
+a.name, span.title,
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+h2.tagline {
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 52px;
+    text-transform: uppercase;
+}
+a.name,
+h3.byline {
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+a.name {
+    padding: 0;
+    font-size: 22px;
+}
+span.title,
+h4.subline {
+    margin: 20px 0 0;
+    padding: 0 0 20px;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.row.up {
+    margin-top: -30px;
+    clear: both;
+}
+
+/*
+
+SECTIONS
+
+*/
+.section h1.logo {
+    display: block;
+    position: relative;
+    width: 520px;
+    height: 100px;
+    background: url(../img/logo-big.png) no-repeat;
+    text-indent: -999em;
+    margin: 0 auto 60px;
+}
+.section.dark h3.byline {
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.section.dark h4.subline {
+    margin: 20px 0 0;
+    padding: 0 0 20px;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+.section p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.section.dark {
+    background-image: url(../img/BG.png);
+}
+#section-contact.dark,
+.section.dark.animated {
+    background-image: none;
+}
+.section.dark.animated .animation {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/animated_bg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: 1;
+}
+.section.dark.animated .container {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+#section-contact.dark:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/office.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+}
+
+/*
+
+PROTOCOL
+
+*/
+a.protocol {
+    margin: 40px 0 0;
+    display: block;
+    position: relative;
+    height: 90px;
+    text-indent: -999em;
+    padding: 0 80px;
+}
+a.protocol img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a.protocol:hover {
+    opacity: 0.6;
+}
+
+/*
+
+LISTS
+
+*/
+ul.features {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 30px 45px 50px 0;
+    list-style: none;
+}
+ul.features li {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 80px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+ul.features li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background: url(../img/blue-icons.png) no-repeat;
+    left: -45px;
+    top: -5px;
+}
+ul.features li.everstore:before {
+    background-position: 0 0;
+}
+ul.features li.blockauth:before {
+    background-position: -50px 0;
+}
+ul.features li.dnkey:before {
+    background-position: -100px 0;
+}
+ul.social {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+ul.social li {
+    display: inline-block;
+    position: relative;
+}
+ul.social li a {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    text-indent: -999em;
+    margin: 0 3px;
+    background: url(../img/icons.png) no-repeat;
+}
+ul.social li.twitter a {
+    background-position: 0 -30px;
+}
+ul.social li.github a {
+    background-position: -30px -30px;
+}
+ul.social li.facebook a {
+    background-position: -60px -30px;
+}
+ul.social li.linkedin a {
+    background-position: -120px -30px;
+}
+ul.social li.twitter a:hover {
+    background-position: 0 0;
+}
+ul.social li.github a:hover {
+    background-position: -30px 0;
+}
+ul.social li.facebook a:hover {
+    background-position: -60px 0;
+}
+ul.social li.linkedin a:hover {
+    background-position: -120px 0;
+}
+
+/*
+
+FORMS
+
+*/
+form.subscribe {
+    padding-bottom: 90px;
+}
+form.subscribe input {
+    display: inline-block;
+    border-radius: 6px 0 0 6px;
+    position: relative;
+    margin: 0;
+    padding: 0 25px;
+    height: 60px;
+    width: 500px;
+}
+form.contact input,
+form.contact textarea {
+    display: block;
+    border-radius: 6px 0 0 6px;
+    position: relative;
+    margin: 0 0 5px;
+    padding: 0 25px;
+    height: 60px;
+}
+form.contact textarea {
+    height: 190px;
+    padding: 15px 25px;
+}
+form.contact {
+    padding: 40px 0 0;
+}
+form.subscribe .submit {
+    display: inline-block;
+    position: relative;
+    border-radius: 0 6px 6px 0;
+    margin: 0;
+    height: 62px;
+    margin: -2px;
+    width: 140px;
+    text-transform: uppercase;
+}
+form.contact .submit {
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+    margin: 40px auto 0;
+    height: 62px;
+    width: 200px;
+    text-transform: uppercase;
+}
+form.contact input,
+form.contact textarea {
+    border-radius: 6px;
+}
+
+/*
+
+TEAM
+
+*/
+a.team {
+    display: block;
+    position: relative;
+    background: transparent;
+    padding: 0 30px;
+    margin: 40px 0 0;
+    
+}
+a.team:hover img {
+    opacity: 0.6;
+}
+a.team img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px;
+}
+a.name {
+    margin-top: -30px;
+}
+a.name,
+a.title {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+/*
+
+FOOTER
+
+*/
+.footer {
+    display: block;
+    position: relative;
+    background: #333;
+    text-align: center;
+}
+.footer .social {
+    padding: 40px 0;
+}
+
+/*
+
+ICONS
+
+*/
+.arrow-down {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrows.png) no-repeat;
+    text-indent: -999em;
+    margin: 60px auto 0;
+}
+.section.light .arrow-down {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrows.png) no-repeat 0 -50px;
+    text-indent: -999em;
+    margin: 60px auto 0;
+}
+.arrow-down:hover {
+    opacity: 0.6;
+}
+.section.dark p.svg {
+    margin: 50px 0 0;
+}
+.section.dark .col-sm-4 p:last-child {
+    margin: 0 0 30px;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+@media (max-width: 1199px) { 
+    a.protocol {
+        padding: 0 50px;
+    }
+    h2.tagline {
+        font-size: 44px;
+    }
+}
+@media (max-width: 991px) { 
+    a.protocol {
+        padding: 0 20px;
+    }
+    ul.features {
+        padding-right: 0;
+    }
+    ul.features li:before {
+        content: "";
+        display: none;
+    }
+    ul.features li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+    h2.tagline {
+        font-size: 65px;
+    }
+    p.copy {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 767px) { 
+    a.protocol {
+        padding: 20px;
+        height: auto;
+    }
+    .section h1.logo {
+        width: 290px;
+        height: 52px;
+        background: url(../img/logo-small.png) no-repeat;
+    }
+    form.subscribe input {
+        border-radius: 6px;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    form.subscribe .submit,
+    form.contact .submit {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    form.contact input,
+    form.contact textarea {
+        border-radius: 6px;
+    }
+    h2.tagline {
+        font-size: 60px;
+    }
+}
+
+/*
+
+RESETS
+
+*/
+a {
+    color: #00A3D9;
+}
+a:hover {
+    color: #757575;
+}
+p.copy {
+    color: #757575;
+}
+h2.tagline {
+    border-bottom: 3px double #444;
+    color: #AAA;
+    text-shadow: 1px 2px 2px #000;
+}
+a.name,
+h3.byline {
+    border-bottom: 3px double #DDD;
+    color: #222;
+}
+a.name {
+    color: #006699;
+}
+span.title,
+h4.subline {
+    color: #444;
+}
+h5 {
+    color: #CCC;
+}
+
+/*
+
+SECTIONS
+
+*/
+.section.dark h3.byline {
+    border-bottom: 3px double #444;
+    color: #AAA;
+}
+.section.dark h4.subline {
+    color: #999;
+}
+
+/*
+
+LISTS
+
+*/
+ul.features {
+    color: #AAA;
+}
+
+/*
+
+FORMS
+
+*/
+form.subscribe input {
+    background: #444;
+    border: 1px solid #000;
+    color: #AAA;
+}
+form.contact input,
+form.contact textarea {
+    color: #AAA;
+    background: #444;
+    border: 1px solid #000;
+}
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #AAA;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #AAA;
+   opacity: 1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #AAA;
+   opacity: 1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #AAA;
+}
+form.subscribe .submit {
+    border: 1px solid #000;
+    background: #222;
+    color: #555;
+}
+form.contact .submit {
+    border: 1px solid #000;
+    background: #222;
+    color: #006699;
+}
+form.contact .submit:hover {
+    background: #333;
+    color: #555;
+}
+form.subscribe .submit:hover {
+    background: #000;
+    color: #444;
+}
+
+/*
+
+FOOTER
+
+*/
+.footer {
+    background: #333;
+}
+
+/*
+
+ICONS
+
+*/
+.section.dark p.svg path {
+    fill: #EEE;
+}
+.section.dark h5 {
+    color: #00A3D9;
+}

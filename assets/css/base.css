@@ -1,0 +1,288 @@
+/*
+
+RESETS
+
+*/
+a {
+    text-decoration: none;
+}
+.jumbotron h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+.jumbotron {
+    padding-top: 0px
+}
+.pre {
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    font-size: 16px;
+    line-height: 1.42857;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*
+
+HEADER
+
+*/
+#header {
+    display: block;
+    position: relative;
+    padding: 60px 0 75px;
+    text-align: center;
+}
+#header h2 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    font-weight: normal;
+    padding: 0;
+}
+#header h2 {
+    font-size: 18px;
+    margin: 0 0 15px;
+    font-weight: normal;
+    padding: 0;
+}
+.header-introduction {
+    display: block;
+    position: relative;
+    padding: 30px 0 15px;
+}
+
+/*
+
+RIBBONS
+
+*/
+.ribbon {
+    display: block;
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+}
+.ribbon p {
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.ribbon pre {
+    margin-top: 25px;
+    padding: 30px 15px;
+}
+.ribbon pre code {
+    font-size: 115%;
+    line-height: 20px;
+}
+.ribbon h3 {
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+
+/*
+
+SECTIONS
+
+*/
+.section {
+    display: block;
+    position: relative;
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+/*
+
+WIDGETS
+
+*/
+.widget-page-widget {
+    padding: 10px 0 40px;
+    margin: 5px 0 15px;
+}
+.widget-page-widget h6.usp {
+    font-size: 22px;
+}
+.widget-page-widget .icon-wrapper {
+    margin: 0 0 0;
+}
+.widget-page-widget .description {
+    margin: 0 35px 30px;   
+}
+
+
+/*
+
+FOOTER
+
+*/
+#footer {
+    display: block;
+    position: relative;
+    padding: 40px 0;
+    text-align: left;
+}
+#footer .right {
+    text-align: right;
+}
+#footer a.neuroware {
+    text-indent: -999px;
+    display: inline-block;
+    position: relative;
+    width: 298px;
+    height: 50px;
+    background: url(../img/neuroware.png) no-repeat;
+}
+
+/*
+
+CONTENT
+
+*/
+#main-content {
+    display: block;
+    position: relative;
+    padding: 60px 0;
+    text-align: center;
+}
+#main-content h2.title {
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+}
+
+/* SOCIAL ICONS */
+a.shares {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-indent: 999em;
+    overflow: hidden;
+}
+a.shares.angel {
+    background: url(../img/angellist.png) no-repeat;
+}
+a.shares.twitter {
+    background: url(../img/twitter.png) no-repeat;
+}
+a.shares.github {
+    background: url(../img/github.png) no-repeat;
+}
+a.shares.facebook {
+    background: url(../img/facebook.png) no-repeat;
+}
+a.shares.pinterest {
+    background: url(../img/pinterest.png) no-repeat;
+}
+a.shares:hover {
+    opacity: 0.7;
+}
+
+
+/*
+
+SHARE BUTTONS
+
+*/
+a.mshares {
+    background: url("../img/shares.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    text-indent: -999em;
+    width: 50px;
+}
+a#angellist.mshares {
+    background-position: 0 0;
+}
+a#twitter.mshares {
+    background-position: -50px 0;
+}
+a#facebook.mshares {
+    background-position: -100px 0;
+}
+a#github.mshares {
+    background-position: -150px 0;
+}
+a#google.mshares {
+    background-position: -200px 0;
+}
+a#linkedin.mshares {
+    background-position: -250px 0;
+}
+a#angellist.mshares:hover {
+    background-position: 0 -50px;
+}
+a#twitter.mshares:hover {
+    background-position: -50px -50px;
+}
+a#facebook.mshares:hover {
+    background-position: -100px -50px;
+}
+a#github.mshares:hover {
+    background-position: -150px -50px;
+}
+a#google.mshares:hover {
+    background-position: -200px -50px;
+}
+a#linkedin.mshares:hover {
+    background-position: -250px -50px;
+}
+.contents a#angellist.mshares, .modal a#angellist.mshares {
+    background-position: 0 -50px;
+}
+.contents a#twitter.mshares, .modal a#twitter.mshares {
+    background-position: -50px -100px;
+}
+.contents a#facebook.mshares, .modal a#facebook.mshares {
+    background-position: -100px -100px;
+}
+.modal a#github.mshares {
+    background-position: -150px -100px;
+}
+.contents a#google.mshares, .modal a#google.mshares {
+    background-position: -200px -100px;
+}
+.contents a#linkedin.mshares, .modal a#linkedin.mshares {
+    background-position: -250px -100px;
+}
+.modal a#angellist.mshares:hover {
+    background-position: 0 -50px;
+}
+.modal a#twitter.mshares:hover {
+    background-position: -50px -100px;
+}
+.modal a#facebook.mshares:hover {
+    background-position: -100px -100px;
+}
+.modal a#github.mshares:hover {
+    background-position: -150px -100px;
+}
+.modal a#google.mshares:hover {
+    background-position: -200px -100px;
+}
+.modal a#linkedin.mshares:hover {
+    background-position: -250px -100px;
+}
+.contents span.mshares {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+@media (max-width: 768px) { 
+    #footer .col-sm-6 p {
+        text-align: center !important;
+    }
+}
