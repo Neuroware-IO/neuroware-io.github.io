@@ -286,6 +286,10 @@ WUFOO
 .wufoo-wrapper iframe body {
     background: transparent;
 }
+.wufoo-wrapper {
+    display: block;
+    position: relative;
+}
 
 /*
 
