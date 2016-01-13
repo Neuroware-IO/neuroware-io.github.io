@@ -1,8 +1,11 @@
-/*
-
-RESETS
-
-*/
-html.embed {
-    background: transparent;
+form.wufoo #header {
+    display: none;
+}
+form.wufoo label {
+    color: #EEE;
+}
+form.wufoo .field {
+    background: #444;
+    border: 1px solid #000;
+    color: #AAA;
 }
