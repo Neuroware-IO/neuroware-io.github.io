@@ -278,6 +278,17 @@ a#linkedin.mshares:hover {
 
 /*
 
+WUFOO
+
+*/
+.wufoo-wrapper iframe,
+.wufoo-wrapper iframe html, 
+.wufoo-wrapper iframe body {
+    background: transparent;
+}
+
+/*
+
 RESPONSIVENESS
 
 */
