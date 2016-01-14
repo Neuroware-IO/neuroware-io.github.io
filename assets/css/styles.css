@@ -18,8 +18,13 @@ p.copy {
     padding: 10px 200px 30px;
     font-size: 15px;
 }
-p.copy.pull-back {
-    margin-bottom: -80px;
+.section.page p.copy {
+    text-align: justify;
+    padding: 15px 100px;
+}
+.section.page p.copy.pull-back {
+    margin-bottom: -50px;
+    text-align: center;
 }
 a.name, span.title,
 h1, h2, h3, h4, h5, h6 {
