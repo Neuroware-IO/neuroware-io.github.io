@@ -20,7 +20,7 @@ p.copy {
 }
 .section.page p.copy {
     text-align: justify;
-    padding: 15px 100px;
+    padding: 5px 110px;
 }
 .section.page p.copy.pull-back {
     margin-bottom: -50px;

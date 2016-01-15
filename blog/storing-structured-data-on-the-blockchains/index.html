@@ -40,13 +40,15 @@
     <div class="container">
         <h3 class="byline">Storing Structured Data on The Blockchains</h3>
         
+        <br>
+        
         <p class="copy">The foundations for any distributed application require distributed protocols, and in today's decentralised world there’s arguably nothing better to build upon than blockchains. Since their inception there have been a number of protocols built around blockchains that were designed to extend their use beyond the transactional boundaries of exchanging cryptocurrencies. However, due to the complexity of linking multiple transactions intelligently, very few protocols (if any) have been capable of storing large amounts of structured data directly on a blockchain.</p>
         
         <p class="copy">Six months ago we made a discovery that got us started on a project. That project evolved into a platform. That platform is now acquiring partnerships for further experimentation. We call it CORTEX - and it’s capable of storing any kind of data model directly on a blockchain.</p>
         
         <p class="copy">At it’s core is our blockchain-agnostic data-storage method that combines the predictability of Hierarchically Deterministic (HD) key-mapping with standard (38 byte limited) OP_RETURN functionality. This allows us to define a schema that utilizes different branches of keys for different things. One branch could (for example) represent the name of databases, with each of its descendants representing one of many databases. Each of its descendants could then do the same to represent the individual database tables or collection names, with one branch of each of their descendants then being used to represent fields names, another branch representing field types, one for values, and so on and so forth.</p>
         
-        <p class="copy">IMAGE GOES HERE</p>
+        <img src="/assets/img/key.jpg">
         
         <p class="copy">By doing this, we are able to distribute a practically unlimited amount of structured data across a vast array of seemingly random transactions - all linked directly to a single master key. The public key allows anyone with that key and schema to then recreate and view all of the data within that instance (that has not been encrypted prior to it being encoded on the blockchain), whereas the private key is required to add, edit or decrypt data.</p>
         
