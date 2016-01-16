@@ -42,11 +42,11 @@
         
         <br>
         
-        <p class="copy">The foundations for any distributed application require distributed protocols, and in today's decentralised world there’s arguably nothing better to build upon than blockchains. Since their inception there have been a number of protocols built around blockchains that were designed to extend their use beyond the transactional boundaries of exchanging cryptocurrencies. However, due to the complexity of linking multiple transactions intelligently, very few protocols (if any) have been capable of storing large amounts of structured data directly on a blockchain.</p>
+        <p class="copy">The foundations for any distributed application require distributed protocols, and in today's decentralised world there’s arguably nothing better to build upon than blockchains. Since their inception there have been a number of additional protocol layers built upon and around the blockchains that are designed to extend their use beyond the transactional boundaries of exchanging cryptocurrencies. However, due to the complexity of linking multiple transactions together in a sensible way, very few protocols (if any) have been capable of storing large amounts of structured data directly on a blockchain.</p>
         
         <p class="copy">Six months ago we made a discovery that got us started on a project. That project evolved into a platform. That platform is now acquiring partnerships for further experimentation. We call it CORTEX - and it’s capable of storing any kind of data model directly on a blockchain.</p>
         
-        <p class="copy">At it’s core is our blockchain-agnostic data-storage method that combines the predictability of Hierarchically Deterministic (HD) key-mapping with standard (38 byte limited) OP_RETURN functionality. This allows us to define a schema that utilizes different branches of keys for different things. One branch could (for example) represent the name of databases, with each of its descendants representing one of many databases. Each of its descendants could then do the same to represent the individual database tables or collection names, with one branch of each of their descendants then being used to represent fields names, another branch representing field types, one for values, and so on and so forth.</p>
+        <p class="copy">At it’s core is our blockchain-agnostic data-storage method that combines the predictability of Hierarchically Deterministic (HD) key-mapping with standard (38 byte limited) OP_RETURN functionality. This allows us to define a schema that utilizes different branches of keys for different things. One branch could (for example) represent the name of databases, with each of its descendants representing one of many databases. Each of their descendants could then do the same to represent the individual database tables or collection names, with one branch of each of their descendants then being used to represent fields names, another branch representing field types, one for values, and so on and so forth.</p>
         
         <hr>
         
@@ -54,7 +54,7 @@
         
         <hr>
         
-        <p class="copy">By doing this, we are able to distribute a practically unlimited amount of structured data across a vast array of seemingly random transactions - all linked directly to a single master key. The public key allows anyone with that key and schema to then recreate and view all of the data within that instance (that has not been encrypted prior to it being encoded on the blockchain), whereas the private key is required to add, edit or decrypt data.</p>
+        <p class="copy">By doing this, we are able to distribute a practically unlimited amount of structured data across a vast array of seemingly random transactions - all linked directly to a single master key. The public key allows anyone with that key and schema to then recreate and view all of the data within that instance (that has not been encrypted prior to it being encoded on the blockchain), whereas the private key is required to add, edit, decrypt data or update schemas.</p>
         
         <p class="copy">Since data entry is transactional by default and every event is recorded on the blockchain, there is an inherently immutable audit available that details every change made to any data within any of the databases being linked to that single master key.</p>
         
@@ -66,17 +66,17 @@
         
         <hr>
         
-        <p class="copy">Although still in the early stages of its development, we’re building Cortex around a small group of select partners to help form the foundations for any distributed application or service. Based on their feedback and challenges, we’re creating our platform with 3 main components in mind:</p>
+        <p class="copy">Although still in the early stages of its development, we’re building Cortex around a small group of select partners to help form the foundations for any distributed application or service. Based on their feedback and challenges, we’ve been building upon our platform with three main requirement in mind:</p>
         
-        <p class="copy"><b>Key pair logistics</b></p>
+        <p class="copy"><b>Key pair generation, logistics and public broadcasting</b></p>
         
         <p class="copy"><b>Decentralized identities, role-management, and authorisation</b></p>
         
         <p class="copy"><b>On-chain data storage (used as the central data repository of truth for all Cortex events)</b></p>
     
-        <p class="copy">Because we’re building Cortex with modularity in mind, each of these components can be easily replaced should you require something that is not 100% distributed. For example, you could replace the DB module to use MySQL or MongoDB rather than a blockchain. You could even replace our identity module with oAuth or your own customised login system. This enables organizations to create their own experiences around any of their existing products and services, but with the benefits of using a blockchain as your underlying storage engine. </p>
+        <p class="copy">However, because we’re building Cortex with modularity in mind, each of these components can be easily replaced should you require something that is not 100% distributed. For example, you could replace the DB module to use MySQL or MongoDB rather than a blockchain. You could even replace our identity module with oAuth or your own customised login system. This enables organizations to create their own experiences around any of their existing products and services, but with the benefits of using a blockchain as your underlying storage engine and (or) way to distribute the need for trust, or even simply just for added two-factor security.</p>
         
-        <p class="copy">In it’s current state Cortex is a sandbox environment for creating entirely new concepts. As development continues, we’ll be inviting a number of partners to the platform to help us identify interesting new and non-financial use-cases for the future of distributed data. </p>
+        <p class="copy">In it’s current state Cortex is a sandbox environment for creating entirely new concepts. As development continues, we’ll be inviting a number of partners to the platform to help us identify interesting and new non-financial use-cases for the future of distributed data. </p>
     
     </div>
 </div>
