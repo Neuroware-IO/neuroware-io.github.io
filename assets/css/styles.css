@@ -399,7 +399,7 @@ ICONS
     height: 50px;
     background: url(../img/arrows.png) no-repeat 0 -50px;
     text-indent: -999em;
-    margin: 60px auto 0;
+    margin: 15px auto 0;
 }
 .arrow-down:hover {
     opacity: 0.6;
