@@ -88,6 +88,11 @@ h5 {
 .section.page img.img-responsive {
     width: 100%;
 }
+p.blog-intro {
+    text-align: justify;
+    color: #CCC;
+    padding: 0 0 10px;
+}
 
 /*
 
