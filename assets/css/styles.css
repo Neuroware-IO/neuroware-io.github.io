@@ -72,6 +72,9 @@ h5 {
 .section.page .well p.copy {
     text-align: center;
 }
+.section.page img.img-responsive {
+    width: 100%;
+}
 
 /*
 

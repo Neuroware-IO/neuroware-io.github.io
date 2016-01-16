@@ -312,4 +312,9 @@ RESPONSIVENESS
     p.copy {
         padding-left: 5px !important;
         padding-right: 5px !important;
+    }
+    .section.page .well {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
