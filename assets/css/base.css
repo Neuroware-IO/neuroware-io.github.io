@@ -320,4 +320,10 @@ RESPONSIVENESS
     body .section.page .well span.number {
         display: none;
     }
+    body h2.tagline {
+        font-size: 38px;
+    }
+    body p.blog-intro {
+        padding-top: 20px;
+    }
 }
