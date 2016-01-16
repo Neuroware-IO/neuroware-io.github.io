@@ -313,8 +313,11 @@ RESPONSIVENESS
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
-    .section.page .well {
+    body .section.page .well {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    body .section.page .well span.number {
+        display: none;
     }
 }
