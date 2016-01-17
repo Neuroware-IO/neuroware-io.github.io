@@ -58,6 +58,9 @@ SECTIONS
 .section.light {
     background: #F7F7F7;
 }
+.section.light h3.date {
+    color: #757575;
+}
 
 /*
 
