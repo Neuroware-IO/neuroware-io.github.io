@@ -41,17 +41,33 @@
         
         <br>
         
-        <p class="copy">And then?</p>
+        <p class="copy">Blockchains are flipping the script on the financial world, and yet we’re still just scratching the surface of their true technological potential. If it were a student it’s report card would surely read “gifted, but must try harder”. What we have -  for the first time in history - is a distributed data store without central authority or a single point of failure; constantly working to reach consensus to continually agree upon a common, permanent, record of immutable open data.</p>
         
-        <img class="img img-responsive" src="/assets/img/Cortex-Infographic.png">
+        <p class="copy">The true value of actual immutable data is difficult to quantify because it’s never existed before. But why should blockchains only benefit finance? What else could these incredibly powerful networks do for the rest of the world’s data, now that it can be shared easily and without censorship? Given every aspect of today's digital world and our near-total dependency on data, the implications suddenly go beyond the mere realms of finance. Everything changes.</p>
+            
+        <p class="copy">Understanding all of the opportunities and use cases for immutable databases is not anything we could hope to accomplish and justify in a single blog post, so we won't even try. Instead, we’ll share with you our method that makes such opportunities available to minds far greater than ours to do with their data as they please. We believe we’ve discovered the ability for anyone to replicate database like functionality across multiple blockchains; and it's called <a href="http://everstore.io" target="_blank">Everstore</a>. What you do with it is up to you.</p>
         
-        <hr>
+        <p class="copy">However, before you begin to explore Everstore, we should provide some less technical context first.</p>
         
-        <p class="copy">
-            <img class="img img-responsive" src="/assets/img/Cortex-Infographic.png">
-        </p>
+        <p class="copy">Of all the various blockchains and types of distributed ledgers, the earliest, most popular, and as such; those marshalling the most computer power also tend to be the most secure. While security is a desirable quality in data storage, we’re still limited to storing a specific type of data - a record of transactions and asset ownership specific to the tokens for that blockchain.</p>
         
-        <p class="copy">Two examples of images above...</p>
+        <p class="copy">Everstore is a way to use these transactional records to store more than just token exchange. What makes the Everstore protocol unique is the ability to store ‘structured data’ similar to what you find in a database, with virtualized tables, fields, rows and even a way to insert new rows and update existing data and for that to be available to any blockchain.</p>
+        
+        <p class="copy">The difficulty in creating this database lies in the existing structure of the blockchain - optimised for chronologically ordered transactional records. The further you move from this use case, the more you have to compromise your objectives of ‘structured data’. There have been several attempts to do this; with the most common approaches using existing databases that bolt a blockchain on the top, or to store the data ‘off-chain’ and then store a reference to the data in a blockchain to benefit from that chronological property. While these approaches have their merits, they fail to really capitalise on the full strengths of the existing blockchains.</p>
+        
+        <p class="copy">The trick is to find a way to impose additional structure on top of the existing stacked scripts powering these transactions. There is a way to store small amounts of your own, arbitrary, data in a transaction using a technique known as <a href="https://en.bitcoin.it/wiki/Script" target="_blank">OP_RETURN</a>. If you can chain together enough transactions in an intelligent way, then you have both the ability to store your own data directly on the chain, as well as the ability to describe its structure. Anyone can then extract that data from within these transactions and recreate the structure themselves, essentially turning blockchains into a giant database hosting service.</p>
+        
+        <p class="copy">So how’s it done? Since transactions are only able to be structured chronologically within a chain (whilst they pass value between people), there’s no inherent way flexible enough to achieve our aim of a standard database. Transactions do however transfer ownership of their asset between addresses, and we do have a way of structuring addresses thanks to <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki" target="_blank">BIP32</a>, which gives blockchains the ability to create hierarchical addresses.</p>
+        
+        <p class="copy">You start with a fixed piece of data (known as the seed) and pass it through the BIP32 equation to get your key-pair out. From this key-pair you can then calculate the address used in the transaction. So long as you put the same seed data in at the start you will always get the same key-pair out of the equation. You can also pass in an offset to the equation. In effect saying ‘For this input seed, give me the first key-pair, or for this input seed give me the second key-pair’.</p>
+        
+        <p class="copy">Another technique used in the Everstore protocol is the ability to take an outputted key-pair and use it as an input to run the BIP32 equation again, effectively chaining BIP32 equations together to create a tree. It is this predictability of output addresses that allows us to start imposing the structure we need.  Defined in the Everstore whitepaper is a full-specification outlining the entire tree, but to simplify things for this introduction; the first level of keys would be used to store the description of the data collection, the second level from those keys would represent the tables and the 3rd level from each of the table trees would represent the fields for that table. In reality it’s a bit more complex than that due to the need to account for variables in the equation, such as types of data, their default values and other such settings.</p>
+        
+        <p class="copy">Nonetheless, now that you have a predefined purpose for all of these addresses that can be generated and tied-back to a single master key, you will need to actually start storing some data in them, and for that we use standard valid transactions. The OP_RETURN data in a transaction for a specific address (with a specific purpose as defined by it’s position in the tree) is the data used to populate that data-point. We have to limit ourselves to looking at the data in only the outgoing transactions (as anyone can send transactions into an address and we don’t want them messing up our data). This technique of structured addresses for ‘purpose’ and outgoing transactions for ‘data’ is what drives Everstore.</p>
+        
+        <p class="copy">The whitepaper on this page goes into far more technical detail than this blog post ever could. We implore you to have a read through, pick it apart, and start ideating your own use cases for such a protocol. If you stumble across something we didn’t see, we’d appreciate it if you could share it with us and or critique as required.</p>
+        
+        <p class="copy">In the meantime, we’ll continue to refine Everstore as one part of our overall Cortex platform, and will share our progress on its development and implications as we go.</p>
         
     </div>
 </div>
