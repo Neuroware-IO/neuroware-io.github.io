@@ -53,6 +53,20 @@ table.table.blog th {
     display: inline-block;
     text-align: center;
 }
+h4.post-title {
+    text-align: left;
+    margin-top: 60px;
+}
+h4.post-title span.date {
+    font-size: 75%;
+    float: right;
+    opacity: 0.65;
+    padding-top: 5px;
+}
+.post img.img-responsive {
+    margin: 55px 0 0 0;
+    clear: both;
+}
 
 /*
 
@@ -356,6 +370,12 @@ RESPONSIVENESS
         padding-top: 20px;
     }
     table.table.blog {
+        display: none;
+    }
+    h4.post-title {
+        text-align: center;
+    }
+    h4.post-title span.date {
         display: none;
     }
 }
