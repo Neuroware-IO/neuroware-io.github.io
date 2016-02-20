@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../../assets/css/colours.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="../../assets/css/styles.css" type="text/css" media="screen" />
     
-<title>Introducing BitDB | The Compplimentary Blockchain-Agnositic Node</title>
+<title>Introducing BitDB | The Complimentary Blockchain-Agnositic Node</title>
     
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
@@ -36,19 +36,19 @@
 
 <div class="section light page" id="section-intro">
     <div class="container">
-        <h3 class="byline" style="text-transform: none">Introducing BitDB,<br /><span style="font-size: 75%; opacity: 0.75;">The Complimentary Blockchain-Agnositic Node</span></h3>
+        <h3 class="byline" style="text-transform: none">Introducing the BitDB Project<br /><span style="font-size: 75%; opacity: 0.75;">The Complimentary Blockchain-Agnositic Node</span></h3>
         <h3 class="date">February 20th, 2016</h3>
         
         <br>
         
-        <p class="copy">When recently <a href="http://neuroware.io/blog/everstore-whitepaper-introducing-the-distributed-database-protocol-for-blockchains/" target="_blank">publishing</a> our first <a href="http://everstore.io" target="_blank">Everstore</a> whitepaper and working on the economic implications of not just Everstore, but any other project using OP_Returns to encode arbitary data on the blockchains - it got us thinking...</p>
+        <p class="copy">When <a href="http://neuroware.io/blog/everstore-whitepaper-introducing-the-distributed-database-protocol-for-blockchains/" target="_blank">publishing</a> our first whitepaper and considering the economic implications of not just <a href="http://everstore.io" target="_blank">Everstore</a>, but any project utilizing OP_Returns to encode arbitary data on the blockchains, it got us thinking...</p>
         
-        <p class="copy">The standardized method for inserting arbitrary data upon the majority of blockchains is through the use of OP_Returns, which are currently limited to a single OP_Return per transaction. This is somewhat strange, as a transaction without OP_Returns can have as many inputs and outputs as you like, so long as you pay for the KB space used by the script to relay that transaction to the network. It is the fact that a transaction cannot include multiple OP_Returns that increases the blockchain bloat, not the data itself.</p>
+        <p class="copy">The standardized method for inserting arbitrary data upon the majority of blockchains is through the use of OP_Returns, which is currently limited to a single OP_Return per transaction. This feels somewhat strange; as a transaction without OP_Returns can have as many inputs and outputs as you like, so long as you pay for the KB space used by the script to relay that transaction to the network. It's the fact that a transaction can't include multiple OP_Returns that increases the blockchain bloat, not the actual data itself.</p>
         
-        <p class="copy">We propose that data should be neutral and that we should allow the network to agree that there can and should be more than one type of block doing more than one thing. The trouble with distributed protocols is that different people with different views want to to do different things, and right now, everyone thinks it can only be doing just one thing. Taking a step back, we should be able to see the accomplishment of developing a freely available, open and immutable data-storage engine. If we can agree that is what it really is and then let the politics play-out at an auxiliary protocol level, where heated opinions can remain entirely focused on specific use-cases; the world would be a much happier place.</p>
+        <p class="copy">We propose that all data should be neutral and that we should allow the network to agree that there can (and should) be more than one type of block doing more than one thing. The trouble with distributed protocols is that different people with different views want to to do different things, and right now, everyone thinks there can be only one answer. Taking a step back, we should all be able to see the accomplishment of developing a freely available, open and immutable data-storage engine free of censorship. If only we could agree that the blockchain really is for everyone and then let the politics play-out at an auxiliary protocol level, where heated opinions can remain entirely focused on specific use-cases, the distributed world would be a much happier place.</p>
         
-        <h2 class="sub">Introducing Neurons</h2>
-        <p class="copy">If we were to think of how a blockchain could be optimised for data-storage there are several properties we would like to see. Before we do, let’s first define the unit of value for this blockchain as Neurons. The list of defining properties we feel are most important to a blockchain optimized for data-storage are as follows:</p>
+        <h2 class="sub">Introducing the concept of Neurons</h2>
+        <p class="copy">If we were to think of how a blockchain could be optimised for data-storage there are several properties we would like to see. Before we do, for the sake of ease let’s first define the unit of value for this blockchain as '<i>Neurons</i>'. The list of defining properties we feel are most important to a blockchain optimized for data-storage would be:</p>
         
         <div class="well">
             <p class="copy">
@@ -61,20 +61,20 @@
                 <b><span class="number">03</span> Maximum of 100 Trillion Neurons discovered</b>
             </p>
             <p class="copy">
-                <b><span class="number">04</span> Default of 10MB Blocks every 1 Minute</b>
+                <b><span class="number">04</span> Default of 10MB blocks every 1 minute</b>
             </p>
             <p class="copy">
                 <b><span class="number">05</span> Linear Neuron discovery</b>
             </p>
         </div>
         
-        <p class="copy">By focusing on the first two problems, we could look at the solution as one that is also economically-agnostic - in that it could be used in conjunction with any blockchain. We are now working on a Bitcoin complimentary-node implementation that attempts to address the first two properties of Neuron. Removing integers and multiple OP_Returns.</p>
+        <p class="copy">By focusing on the first two problems, we could look at the solution as somewhat economically-agnostic - in that it could really be used in conjunction with any blockchain supporting OP_Returns. Currently, we are working on a Bitcoin implementation of a complimentary node that attempts to address the first two properties of Neuron - removing integers and multiple OP_Returns.</p>
         
-        <p class="copy">For those with a non-development background who are reading this, the importance of whole integer numbers within a system may not at first be entirely apparent. In 1991 - a floating point error caused a missile intercept failure that resulted in the loss of life for 28 US soldiers and anyone working with financial software will also suffer cardiac distress when hearing either the words float or decimals. This is why removing all notion of things being split or divided is incredibly important and also why we believe using the name Bitcoin is a really bad idea; as it introduces the notion of something that is whole.</p>
+        <p class="copy">For those with a non-development background who are reading this, the importance of whole integer numbers may not be entirely apparent. In 1991 a floating point calculation error caused a missile intercept failure that resulted in the loss of life for 28 people. Anyone developing financial software will likely suffer cardiac distress when hearing either the words float or decimals. Essentially the more complicated you make numbers, the easier it is to make catastrophic mistakes. This is why removing all notion of things being split or divided is incredibly important, and also why we believe using the name Bitcoin isn't really ideal - as they aren't at all like the coins we know, and it inclines they are whole.</p>
         
-        <p class="copy"><strong>Why make a complicated thing even more complicated?</strong></p>
+        <p class="copy"><i><strong>Why make a complicated thing even more complicated?</strong></i></p>
         
-        <p class="copy">For those at all curious as to how this could play-out, we ran some numbers and looked at the cost (in byte size and mining fees) of encoding data on the Bitcoin blockchain (if the price of 1 BTC was US$380 and one OP_Return held up-to 38 bytes). By putting the Neuron comparisons beside (table below not available in mobile view), it becomes clear that any application requiring more than 1,000 OP_Returns every ten minutes could benefit all involved by using Neurons.</p>
+        <p class="copy">For those at all curious as to how this could play-out, we ran some numbers and looked at the cost (in byte size and mining fees) of encoding data on the Bitcoin blockchain (if the price of 1 BTC was US$380 and one OP_Return held up-to 38 bytes). By putting the Neuron comparisons beside (table below not available in mobile view), it becomes clear that any application requiring more than 1,000 OP_Returns every ten minutes could benefit all involved by utilizing Neurons.</p>
         
         <p class="copy">
             <table class="table striped blog">
@@ -144,7 +144,7 @@
         <h2 class="sub">Reaching Consensus</h2>
         <p class="copy">However, as the current year-long block-size debate continues to spin within the court of public perception; it becomes increasingly apparent that in order to reach a political consensus as to what the Bitcoin blockchain is or should become, we must first dig-deeper into the various parties that are racing for control and ask ourselves why. Why would or wouldn’t they want larger blocks - and in all honesty, are block sizes really the most important thing to be talking about when what we need are block choices?</p>
         
-        <p class="copy">It’s hard to answer these questions, as many of the variables involved often become personal - so can only hope that these same debates regarding the type of data that is going into blocks does not become as political or painful to resolve as it has been to discuss the size of those blocks - as seen by the wide range of opinions below:</p>
+        <p class="copy">It’s hard to answer these questions, as many of the variables involved so often become personal. We can only hope that the same debates regarding the type of data that is going into blocks does not become as political or painful to resolve as it has been to discuss the size of those blocks - as seen by the wide range of opinions below:</p>
         
         <div class="well">
             <p class="copy">
@@ -168,13 +168,15 @@
         
         <h2 class="sub">Conclusions</h2>
         
-        <p class="copy">In summary, the significance of now being able to freely store structured immutable data within the world’s most powerful open networks has implications that reach far beyond the mere size or frequency of blocks. Questions have many perspectives and although the blockchain ecosystem is evolving at a rapidly increasing pace as more money and talent is invested, much of that time and resource is unfortunately being spent creating new distributed silos or developing centralized solutions to distributed problems that only work within a single closed network.</p>
+        <p class="copy">In summary, the significance of now being able to freely store structured immutable data within the world’s most powerful open networks has implications that reach far beyond the mere size or frequency of blocks. Although the blockchain ecosystem is evolving at a rapidly increasing pace as more money and talent is invested, much of that time and resource is unfortunately being spent creating new distributed silos or developing centralized solutions to distributed problems that only work within a single closed network.</p>
         
         <p class="copy"><strong>The importance of blockchain-agnosticism cannot be stressed enough.</strong></p>
         
-        <p class="copy">Until there are a selection of networks as computationally secure as the current Bitcoin blockchain that are also allowing arbitrary data encoding, or someone is able to use our starting point of combining HD (BIP32) hierarchy with OP_Returns we have little choice. For now, to ensure that we are able to immutably store whatever data we choose on the blockchain of our own choice; we are instead forced to use something as complicated to understand and process as <a href="http://everstore.io" target="_blank">Everstore</a>.</p>
+        <p class="copy">Until there are a selection of networks as computationally secure as the current Bitcoin blockchain that are also allowing arbitrary data encoding, or someone is able to use our starting point of combining HD (BIP32) hierarchy with OP_Returns, we have little choice. For now, to ensure that we are able to immutably store whatever data we choose on the blockchain; we are instead forced to use a complicated workaround to understand and process it, such as <a href="http://everstore.io" target="_blank">Everstore</a>.</p>
         
-        <p class="copy">It is our ultimate hope that blockchains such as Bitcoin will realize that censoring the precise contents of data and forcing it to be strictly related to the value of tokens used to process transactions on their networks is not a good idea. What more - it is surely better for the opposing political views to be working together, rather than against each other...?</p>
+        <p class="copy">It is our ultimate hope that blockchains such as Bitcoin will realize that censoring the precise contents of data, and forcing it to be strictly related to the value of tokens used to process transactions on their networks, would be seeing this incredible technoligcal accomplishment fail to live up to its full potential.</p>
+    
+     <p class="copy">The world <i>needs</i> immutible and open data - and we're going to need a secure and supportive blockchain to do that.</p>
         
         <p class="copy">
             <div class="well">
