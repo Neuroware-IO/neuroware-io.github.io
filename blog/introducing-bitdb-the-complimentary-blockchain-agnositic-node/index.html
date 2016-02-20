@@ -45,7 +45,7 @@
         
         <p class="copy">The standardized method for inserting arbitrary data upon the majority of blockchains is through the use of OP_Returns, which are currently limited to a single OP_Return per transaction. This is somewhat strange, as a transaction without OP_Returns can have as many inputs and outputs as you like, so long as you pay for the KB space used by the script to relay that transaction to the network. It is the fact that a transaction cannot include multiple OP_Returns that increases the blockchain bloat, not the data itself.</p>
         
-        <p class="copy">We propose that data should be neutral and that we should allow the network to agree that there can and should be more than one type of block doing more than one thing. The trouble with distributed protocols is that different people with different views want to to do different things, and right now, everyone thinks it can only be doing just one thing. Taking a step back, we should be able to see the accomplishment of developing a freely available, open and immutable data-storage engine. If we can agree that is what it really is and then let the politics play-out at an auxiliary protocol level, where heated opinions can remain entirely focused on specific use-cases; the world would be a better place.</p>
+        <p class="copy">We propose that data should be neutral and that we should allow the network to agree that there can and should be more than one type of block doing more than one thing. The trouble with distributed protocols is that different people with different views want to to do different things, and right now, everyone thinks it can only be doing just one thing. Taking a step back, we should be able to see the accomplishment of developing a freely available, open and immutable data-storage engine. If we can agree that is what it really is and then let the politics play-out at an auxiliary protocol level, where heated opinions can remain entirely focused on specific use-cases; the world would be a much happier place.</p>
         
         <h2 class="sub">Introducing Neurons</h2>
         <p class="copy">If we were to think of how a blockchain could be optimised for data-storage there are several properties we would like to see. Before we do, let’s first define the unit of value for this blockchain as Neurons. The list of defining properties we feel are most important to a blockchain optimized for data-storage are as follows:</p>
@@ -72,7 +72,7 @@
         
         <p class="copy">For those with a non-development background who are reading this, the importance of whole integer numbers within a system may not at first be entirely apparent. In 1991 - a floating point error caused a missile intercept failure that resulted in the loss of life for 28 US soldiers and anyone working with financial software will also suffer cardiac distress when hearing either the words float or decimals. This is why removing all notion of things being split or divided is incredibly important and also why we believe using the name Bitcoin is a really bad idea; as it introduces the notion of something that is whole.</p>
         
-        <p class="copy">Why make a complicated thing even more complicated?</p>
+        <p class="copy"><strong>Why make a complicated thing even more complicated?</strong></p>
         
         <p class="copy">For those at all curious as to how this could play-out, we ran some numbers and looked at the cost (in byte size and mining fees) of encoding data on the Bitcoin blockchain (if the price of 1 BTC was US$380 and one OP_Return held up-to 38 bytes). By putting the Neuron comparisons beside (table below not available in mobile view), it becomes clear that any application requiring more than 1,000 OP_Returns every ten minutes could benefit all involved by using Neurons.</p>
         
@@ -148,19 +148,19 @@
         
         <div class="well">
             <p class="copy">
-                <b><span class="number">01</span> Bitcoin-Core</b>
+                <b><span class="number">01</span> Bitcoin-<a href="https://bitcoin.org/en/" target="_blank">Core</a></b>
             </p>
             <p class="copy">
-                <b><span class="number">02</span> Bitcoin-XT</b>
+                <b><span class="number">02</span> Bitcoin-<a href="https://bitcoinxt.software/" target="_blank">XT</a></b>
             </p>
             <p class="copy">
-                <b><span class="number">03</span> Bitcoin-Unlimited</b>
+                <b><span class="number">03</span> Bitcoin-<a href="http://www.bitcoinunlimited.info/" target="_blank">Unlimited</a></b>
             </p>
             <p class="copy">
-                <b><span class="number">04</span> Bitcoin-Classic</b>
+                <b><span class="number">04</span> Bitcoin-<a href="https://bitcoinclassic.com/" target="_blank">Classic</a></b>
             </p>
             <p class="copy">
-                <b><span class="number">05</span> Bitcoin-NG</b>
+                <b><span class="number">05</span> Bitcoin-<a href="http://hackingdistributed.com/2015/10/14/bitcoin-ng/" target="_blank">NG</a></b>
             </p>
         </div>
         
