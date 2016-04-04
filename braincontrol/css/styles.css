@@ -10,6 +10,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Exo', sans-serif;
+    overflow-x: hidden;
     background: rgb(32,17,38); /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover,  rgba(32,17,38,1) 0%, rgba(32,30,35,1) 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover,  rgba(32,17,38,1) 0%,rgba(32,30,35,1) 100%); /* Chrome10-25,Safari5.1-6 */
