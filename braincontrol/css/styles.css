@@ -154,6 +154,11 @@ a.button.secondary:hover {
     background: #DDD;
 }
 
+/*
+
+RESPONSIVENESS
+
+*/
 @media (max-width: 980px) {
     .container {
         display: block;
@@ -161,5 +166,22 @@ a.button.secondary:hover {
         width: 90%;
         padding: 0 5%;
         margin: 0;
+    }
+}
+
+@media (max-width: 515px) {
+    #header {
+        display: none;
+    }
+    #wallet {
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
     }
 }
