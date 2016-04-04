@@ -108,7 +108,18 @@ a#github {
     bottom: 200px;
     left: 50%;
     margin-left: -32px;
-    width: 300px;
+    width: 130px;
+    text-align: center;
+    z-index: 9;
+    line-height: 35px;
+}
+a#fullscreen {
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    margin-left: 145px;
+    width: 120px;
     text-align: center;
     z-index: 9;
     line-height: 35px;
@@ -170,9 +181,17 @@ RESPONSIVENESS
 }
 
 @media (max-width: 515px) {
-    #header {
+    #header span {
         display: none;
     }
+    #header a.logo {
+        left: 50%;
+        margin-left: -100px;
+        float: none;
+        display: block;
+        position: relative;
+    }
+    /*
     #wallet {
         position: fixed;
         z-index: 99999;
@@ -184,4 +203,5 @@ RESPONSIVENESS
         margin: 0;
         padding: 0;
     }
+    */
 }
