@@ -84,6 +84,7 @@ HAND
     left: 50%;
     margin: 0 0 0 -567px;
     z-index: 1;
+    overflow: hidden;
 }
 #wallet {
     display: block;
