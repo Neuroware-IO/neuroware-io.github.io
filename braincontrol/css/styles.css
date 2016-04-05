@@ -111,13 +111,13 @@ h1#footer {
     display: block;
     font-size: 14px;
     font-weight: normal;
-    left: 0;
+    left: -50%;
     line-height: 30px;
     margin: 0;
-    padding: 10px 0 10px 125px;
+    padding: 10px 0 10px 135px;
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: 200%;
 }
 h1#footer a {
     color: #FFFF99;
