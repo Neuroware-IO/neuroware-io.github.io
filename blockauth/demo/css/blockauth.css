@@ -1,0 +1,239 @@
+/*
+
+RESETS
+
+*/
+body, html {
+    background: #000;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    color: #757575;
+}
+.btn-block {
+    overflow: hidden;
+    position: relative;
+}
+.btn-caps {
+    text-transform: uppercase;
+}
+.btn-block.btn-list {
+    text-align: left;
+    margin: 10px 0;
+}
+.panel .btn-block.btn-list:first-child {
+    margin-top: 0;
+}
+.panel .btn-block.btn-list:last-child {
+    margin-bottom: 0;
+}
+.btn-block.btn-list .badge {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+.badge.badge-danger {
+    background: #d9534f;
+    color: #FFF;
+}
+a,
+a:focus {
+    outline: 0;
+}
+hr {
+    height: 1px;
+    border-top: 1px solid #CCC;
+    padding: 3px 0;
+    margin: 8px 0 3px 0;
+}
+
+/*
+
+PANELS
+
+*/
+.panel {
+    padding: 15px;
+    overflow: hidden;
+    margin: 20px 0;
+    border: 3px solid #555;
+    border-radius: 6px;
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(223,229,215,1) 100%, rgba(180,188,175,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 100%,rgba(180,188,175,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 100%,rgba(180,188,175,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b4bcaf',GradientType=0 ); /* IE6-9 */
+}
+.panel h1,
+.panel h2,
+.panel h3 {
+    color: #333;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+.panel h2 {
+    font-size: 13px;
+    color: #757575;
+}
+.panel h3 {
+    font-size: 12px;
+    color: #757575;
+    border-top: 1px dotted #AAA;
+    padding: 5px 0 0;
+    margin: 5px 0 0;
+}
+.panel-form {
+    display: block;
+    position: relative;
+    margin: -15px 0 0;
+}
+.panel-input {
+    font-size: 11px;
+    text-align: center;
+}
+
+/*
+
+AVATARS
+
+*/
+.avatar,
+#avatar {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    border: 5px solid #AAA;
+    padding: 10px;
+    background: #EEE;
+    left: 50%;
+    margin: 20px 0 20px -90px;
+    overflow: hidden;
+}
+.avatar {
+    left: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 30px;
+    border: 1px solid #AAA;
+}
+.avatar img,
+#avatar img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: cover;
+    border-radius: 90px;
+}
+.avatar img {
+    border-radius: 30px;
+}
+#avatar:hover {
+    background: #FFFFEE;
+    border-color: #757575;
+}
+#avatar:hover img {
+    opacity: 0.90;
+}
+
+/*
+
+LISTS
+
+*/
+.list-group-item {
+    position: relative;
+}
+.list-group-item .label {
+    padding: 8px 12px;
+}
+.list-group-item .label.count {
+    right: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+}
+
+/*
+
+ALERTS
+
+*/
+.alert-block {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.alert-title {
+    color: #333;
+    padding: 5px;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px dotted #333;
+    margin: 15px 0 5px;
+    text-transform: uppercase;
+}
+label.alert-title {
+    cursor: pointer;
+}
+label.alert-title:hover {
+    color: #757575;
+}
+
+/*
+
+MODALS
+
+*/
+.modal .modal-body {
+    background: #FFFFEE;
+}
+.modal .modal-header,
+.modal .modal-footer {
+    background: #EEE;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #CCC;
+}
+.modal .modal-footer {
+    border-radius: 0 0 6px 6px;
+    border-top: 1px solid #CCC;
+    border-bottom: none;
+}
+.modal-body .panel {
+    background: #EEE;
+    border-color: #CCC;
+    margin: 0;
+}
+.modal .list-group {
+    margin-bottom: 0;
+}
+.modal .list-group-item-heading {
+    padding-top: 2px;
+    margin-bottom: -6px;
+    color: #333;
+}
+.modal .list-group-item-text {
+    padding-top: 10px;
+    font-size: 12px;
+}
+.modal-body .avatar {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.modal-body .meta {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: 0;
+    height: auto;
+    padding: 10px 5px 5px 70px;
+}
