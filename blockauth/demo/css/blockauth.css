@@ -238,6 +238,12 @@ MODALS
     margin-bottom: -6px;
     color: #333;
 }
+.modal .list-group-item-heading span {
+    color: #757575;
+}
+.modal .list-group-item.active .list-group-item-heading span {
+    color: #EEE;
+}
 .modal .list-group-item-text {
     padding-top: 10px;
     font-size: 12px;
@@ -271,6 +277,25 @@ MODALS
     border-top: none;
     margin-top: -2px;
     padding: 23px 20px;
+}
+
+/*
+
+FORMS
+
+*/
+div.form-group {
+    display: block;
+    position: relative;
+}
+input.form-control.labelled {
+    text-align: right;
+}
+label.label.label-small {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 /*

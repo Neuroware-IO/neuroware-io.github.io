@@ -11,19 +11,28 @@ var blockauth = {
     },
     extras: function()
     {
-        $('.extra-panel.service').on('show.bs.collapse', function() 
-        {
-            
-        });
         $('.extra-panel').on('shown.bs.collapse', function() 
         {
             $(this).parent().find('.list-group-item.active').removeClass('active');
             $(this).prev().addClass('active');
-            
             var id = $(this).attr('id');
-            console.log('id', id);
-            console.log('id', id);
             $('.extra-panel.service').each(function()
+            {
+                console.log("$(this).attr('id')", $(this).attr('id'));
+                if($(this).attr('id') != id && $(this).hasClass('in'))
+                {
+                    $(this).collapse('hide');
+                }
+            });
+            $('.extra-panel.contact').each(function()
+            {
+                console.log("$(this).attr('id')", $(this).attr('id'));
+                if($(this).attr('id') != id && $(this).hasClass('in'))
+                {
+                    $(this).collapse('hide');
+                }
+            });
+            $('.extra-panel.message').each(function()
             {
                 console.log("$(this).attr('id')", $(this).attr('id'));
                 if($(this).attr('id') != id && $(this).hasClass('in'))

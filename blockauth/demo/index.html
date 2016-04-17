@@ -105,9 +105,18 @@
                         <label class="alert alert-block alert-info alert-title" for="dn-key">DN-Key</label>
                         <input id="dn-key" name="dn-key" type="text" class="form-control panel-input" value="btc.mark.smalley.my" />
                         <label class="alert alert-block alert-info alert-title" for="links-twitter">Links</label>
-                        <input id="links-twitter" name="links-twitter" type="text" class="form-control panel-input" value="m_smalley" />
-                        <input id="links-github" name="links-github" type="text" class="form-control panel-input" value="msmalley" />
-                        <input id="links-facebook" name="links-facebook" type="text" class="form-control panel-input" value="mark.smalley" />
+                        <div class="form-group">
+                            <label class="label label-small label-primary" for="links-twitter">Twitter</label>
+                            <input id="links-twitter" name="links-twitter" type="text" class="form-control panel-input labelled" value="m_smalley" />
+                        </div>
+                        <div class="form-group">
+                            <label class="label label-small label-primary" for="links-github">GitHub</label>
+                            <input id="links-github" name="links-github" type="text" class="form-control panel-input labelled" value="msmalley" />
+                        </div>
+                        <div class="form-group">
+                            <label class="label label-small label-primary" for="links-facebook">Facebook</label>
+                            <input id="links-facebook" name="links-facebook" type="text" class="form-control panel-input labelled" value="mark.smalley" />
+                        </div>
                     </form>
                 </div>
             </div>
@@ -236,8 +245,8 @@
                             <form class="panel-form">
                                 <hr />
                                 <div class="dropdown">
-                                    <a id="service_neuroware_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" aria-labelledby="service_neuroware_menu">
+                                    <a id="service_everstore_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="service_everstore_menu">
                                         <a href="#" class="btn btn-block btn-danger">REMOVE</a>
                                         <hr />
                                         <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
@@ -247,7 +256,7 @@
                                 <label class="alert alert-block alert-info alert-title" for="everstore-pubkey">Public Key</label>
                                 <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
                                 <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
-                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="db.everstore.io" />
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
                             </form>
                         </div>
                     </div>
@@ -263,8 +272,8 @@
                             <form class="panel-form">
                                 <hr />
                                 <div class="dropdown">
-                                    <a id="service_neuroware_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" aria-labelledby="service_neuroware_menu">
+                                    <a id="service_cortex_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="service_cortex_menu">
                                         <a href="#" class="btn btn-block btn-danger">REMOVE</a>
                                         <hr />
                                         <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
@@ -274,7 +283,7 @@
                                 <label class="alert alert-block alert-info alert-title" for="cortex-pubkey">Public Key</label>
                                 <input id="cortex-pubkey" name="cortex-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
                                 <label class="alert alert-block alert-info alert-title" for="cortex-dnkey">DN-Key</label>
-                                <input id="cortex-dnkey" name="cortex-dnkey" type="text" class="form-control panel-input auto-select" value="db.everstore.io" />
+                                <input id="cortex-dnkey" name="cortex-dnkey" type="text" class="form-control panel-input auto-select" value="cortex.dnkey.org" />
                             </form>
                         </div>
                     </div>
@@ -301,7 +310,7 @@
                                 <label class="alert alert-block alert-info alert-title" for="neuroware-pubkey">Public Key</label>
                                 <input id="neuroware-pubkey" name="neuroware-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
                                 <label class="alert alert-block alert-info alert-title" for="neuroware-dnkey">DN-Key</label>
-                                <input id="neuroware-dnkey" name="neuroware-dnkey" type="text" class="form-control panel-input auto-select" value="db.everstore.io" />
+                                <input id="neuroware-dnkey" name="neuroware-dnkey" type="text" class="form-control panel-input auto-select" value="db.neuroware.io" />
                             </form>
                         </div>
                     </div>
@@ -334,27 +343,87 @@
             </div>
             <div class="modal-body">
                 <ul class="list-group">
-                    <a href="#" class="list-group-item">
+                    <a class="list-group-item" data-toggle="collapse" href="#contact_ruben" aria-expanded="false" aria-controls="contact_ruben">
                         <div class="avatar"><img src="img/ruben.jpg" /></div>
                         <div class="meta">
                             <h4 class="list-group-item-heading">Ruben Tan</h4>
                             <p class="list-group-item-text">CTO at Neuroware</p>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item">
+                    <div class="collapse extra-panel contact" id="contact_ruben">
+                        <div class="extra-info">
+                            <form class="panel-form">
+                                <hr />
+                                <div class="dropdown">
+                                    <a id="contact_ruben_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="contact_ruben_menu">
+                                        <a href="#" class="btn btn-block btn-danger">REMOVE</a>
+                                        <hr />
+                                        <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
+                                        <a href="#" class="btn btn-block btn-default">UPDATE KEYS</a>
+                                    </ul>
+                                </div>
+                                <label class="alert alert-block alert-info alert-title" for="everstore-pubkey">Public Key</label>
+                                <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
+                                <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
+                            </form>
+                        </div>
+                    </div>
+                    <a class="list-group-item" data-toggle="collapse" href="#contact_johnny" aria-expanded="false" aria-controls="contact_johnny">
                         <div class="avatar"><img src="img/johnny.jpg" /></div>
                         <div class="meta">
                             <h4 class="list-group-item-heading">Johnny Mayo</h4>
                             <p class="list-group-item-text">Neuroware FinTech Adviser</p>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item">
+                    <div class="collapse extra-panel contact" id="contact_johnny">
+                        <div class="extra-info">
+                            <form class="panel-form">
+                                <hr />
+                                <div class="dropdown">
+                                    <a id="contact_johnny_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="contact_johnny_menu">
+                                        <a href="#" class="btn btn-block btn-danger">REMOVE</a>
+                                        <hr />
+                                        <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
+                                        <a href="#" class="btn btn-block btn-default">UPDATE KEYS</a>
+                                    </ul>
+                                </div>
+                                <label class="alert alert-block alert-info alert-title" for="everstore-pubkey">Public Key</label>
+                                <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
+                                <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
+                            </form>
+                        </div>
+                    </div>
+                    <a class="list-group-item" data-toggle="collapse" href="#contact_adam" aria-expanded="false" aria-controls="contact_adam">
                         <div class="avatar"><img src="img/adam.jpg" /></div>
                         <div class="meta">
                             <h4 class="list-group-item-heading">Adam Giles</h4>
                             <p class="list-group-item-text">Neuroware Blockchain Adviser</p>
                         </div>
                     </a>
+                    <div class="collapse extra-panel contact" id="contact_adam">
+                        <div class="extra-info">
+                            <form class="panel-form">
+                                <hr />
+                                <div class="dropdown">
+                                    <a id="contact_adammenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="contact_adam_menu">
+                                        <a href="#" class="btn btn-block btn-danger">REMOVE</a>
+                                        <hr />
+                                        <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
+                                        <a href="#" class="btn btn-block btn-default">UPDATE KEYS</a>
+                                    </ul>
+                                </div>
+                                <label class="alert alert-block alert-info alert-title" for="everstore-pubkey">Public Key</label>
+                                <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
+                                <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
+                            </form>
+                        </div>
+                    </div>
                 </ul>
             </div>
             <div class="modal-footer">
@@ -384,27 +453,87 @@
             </div>
             <div class="modal-body">
                 <ul class="list-group">
-                    <a href="#" class="list-group-item active">
+                    <a class="list-group-item active" data-toggle="collapse" href="#message_ruben" aria-expanded="false" aria-controls="message_ruben">
                         <div class="avatar"><img src="img/ruben.jpg" /></div>
                         <div class="meta">
-                            <h4 class="list-group-item-heading">From Ruben Tan</h4>
+                            <h4 class="list-group-item-heading"><span>From:</span> Ruben Tan</h4>
                             <p class="list-group-item-text">There's something important we need to talk about. Please call me as soon you you read this!</p>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item">
+                    <div class="collapse extra-panel message" id="message_ruben">
+                        <div class="extra-info">
+                            <form class="panel-form">
+                                <hr />
+                                <div class="dropdown">
+                                    <a id="message_ruben_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="message_ruben_menu">
+                                        <a href="#" class="btn btn-block btn-danger">REMOVE</a>
+                                        <hr />
+                                        <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
+                                        <a href="#" class="btn btn-block btn-default">REPLY</a>
+                                    </ul>
+                                </div>
+                                <label class="alert alert-block alert-info alert-title" for="everstore-pubkey">Public Key</label>
+                                <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
+                                <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
+                            </form>
+                        </div>
+                    </div>
+                    <a class="list-group-item" data-toggle="collapse" href="#message_johnny" aria-expanded="false" aria-controls="message_johnny">
                         <div class="avatar"><img src="img/johnny.jpg" /></div>
                         <div class="meta">
-                            <h4 class="list-group-item-heading">From Johnny Mayo</h4>
+                            <h4 class="list-group-item-heading"><span>From:</span> Johnny Mayo</h4>
                             <p class="list-group-item-text">I'm ready when you are!</p>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item">
+                    <div class="collapse extra-panel message" id="message_johnny">
+                        <div class="extra-info">
+                            <form class="panel-form">
+                                <hr />
+                                <div class="dropdown">
+                                    <a id="message_johnny_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="message_johnny_menu">
+                                        <a href="#" class="btn btn-block btn-danger">REMOVE</a>
+                                        <hr />
+                                        <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
+                                        <a href="#" class="btn btn-block btn-default">REPLY</a>
+                                    </ul>
+                                </div>
+                                <label class="alert alert-block alert-info alert-title" for="everstore-pubkey">Public Key</label>
+                                <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
+                                <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
+                            </form>
+                        </div>
+                    </div>
+                    <a class="list-group-item" data-toggle="collapse" href="#message_adam" aria-expanded="false" aria-controls="message_adam">
                         <div class="avatar"><img src="img/adam.jpg" /></div>
                         <div class="meta">
-                            <h4 class="list-group-item-heading">From Adam Giles</h4>
+                            <h4 class="list-group-item-heading"><span>From:</span> Adam Giles</h4>
                             <p class="list-group-item-text">Will you be at the office and free for me on the 27th of April?</p>
                         </div>
                     </a>
+                    <div class="collapse extra-panel message" id="message_adam">
+                        <div class="extra-info">
+                            <form class="panel-form">
+                                <hr />
+                                <div class="dropdown">
+                                    <a id="message_adam_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-dark btn-block btn-caps">Actions <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="message_adam_menu">
+                                        <a href="#" class="btn btn-block btn-danger">REMOVE</a>
+                                        <hr />
+                                        <a href="#" class="btn btn-block btn-default">SEND MESSAGE</a>
+                                        <a href="#" class="btn btn-block btn-default">REPLY</a>
+                                    </ul>
+                                </div>
+                                <label class="alert alert-block alert-info alert-title" for="message-pubkey">Public Key</label>
+                                <input id="everstore-pubkey" name="everstore-pubkey" type="text" class="form-control panel-input auto-select" value="1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk" />
+                                <label class="alert alert-block alert-info alert-title" for="everstore-dnkey">DN-Key</label>
+                                <input id="everstore-dnkey" name="everstore-dnkey" type="text" class="form-control panel-input auto-select" value="everstore.dnkey.org" />
+                            </form>
+                        </div>
+                    </div>
                 </ul>
             </div>
             <div class="modal-footer">
