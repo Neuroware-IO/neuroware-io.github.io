@@ -13,6 +13,14 @@ body, html {
     overflow: hidden;
     position: relative;
 }
+.btn.btn-dark {
+    background: #333;
+    color: #FFF;
+}
+.btn.btn-dark:hover {
+    background: #000;
+    color: #FFFF99;
+}
 .btn-caps {
     text-transform: uppercase;
 }
@@ -255,6 +263,14 @@ MODALS
     padding: 15px;
     border-left: 1px dotted #AAA;
     border-right: 1px dotted #AAA;
+}
+.extra-info .dropdown-menu {
+    width: 100%;
+    background: #FFFFEE;
+    border: 2px solid #AAA;
+    border-top: none;
+    margin-top: -2px;
+    padding: 23px 20px;
 }
 
 /*
