@@ -152,6 +152,11 @@ LISTS
 .list-group-item {
     position: relative;
 }
+.modal .list-group-item.active {
+    background-color: #428bca;
+    border-color: #428bca;
+    color: #fff;
+}
 .list-group-item .label {
     padding: 8px 12px;
 }
@@ -160,6 +165,12 @@ LISTS
     display: inline-block;
     position: absolute;
     top: 7px;
+}
+.modal a.list-group-item.active .list-group-item-heading {
+    color: #FFFF99;
+}
+.modal a.list-group-item.active .list-group-item-heading .avatar {
+    background: #000;
 }
 
 /*
@@ -236,6 +247,14 @@ MODALS
     top: 0;
     height: auto;
     padding: 10px 5px 5px 70px;
+}
+.modal .extra-info {
+    background: #EEE;
+    display: block;
+    position: relative;
+    padding: 15px;
+    border-left: 1px dotted #AAA;
+    border-right: 1px dotted #AAA;
 }
 
 /*

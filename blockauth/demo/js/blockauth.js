@@ -9,9 +9,38 @@ var blockauth = {
             blockauth.modal.open(modal);
         });
     },
+    extras: function()
+    {
+        $('.extra-panel.service').on('show.bs.collapse', function() 
+        {
+            
+        });
+        $('.extra-panel').on('shown.bs.collapse', function() 
+        {
+            $(this).parent().find('.list-group-item.active').removeClass('active');
+            $(this).prev().addClass('active');
+            
+            var id = $(this).attr('id');
+            console.log('id', id);
+            console.log('id', id);
+            $('.extra-panel.service').each(function()
+            {
+                console.log("$(this).attr('id')", $(this).attr('id'));
+                if($(this).attr('id') != id && $(this).hasClass('in'))
+                {
+                    $(this).collapse('hide');
+                }
+            });
+        });
+        $('.extra-panel').on('hidden.bs.collapse', function() 
+        {
+            $(this).prev().removeClass('active');
+        });
+    },
     init: function()
     {
         blockauth.buttons();
+        blockauth.extras();
         blockauth.inputs();
         blockauth.resize();
     },
