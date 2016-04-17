@@ -225,3 +225,19 @@ RESPONSIVENESS
         overflow: hidden;
     }
 }
+
+/*
+
+MOBILE SAFARI
+
+*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  select:focus,
+  textarea,
+  textarea:focus,
+  input,
+  input:focus {
+    font-size: 16px;
+  }
+}

@@ -237,3 +237,19 @@ MODALS
     height: auto;
     padding: 10px 5px 5px 70px;
 }
+
+/*
+
+MOBILE SAFARI
+
+*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  select:focus,
+  textarea,
+  textarea:focus,
+  input,
+  input:focus {
+    font-size: 16px;
+  }
+}
