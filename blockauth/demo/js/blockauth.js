@@ -1,6 +1,11 @@
 var blockauth = {
     buttons: function()
     {
+        $('body').on('click', '.btn-demo', function(e)
+        {
+            e.preventDefault();
+            blockauth.modal.new('Warning', 'This demo is not yet hooked-up to a blockchain so is unable to provide the full functionality that will be available once it has been connected...');
+        });
         $('body').on('click', '.modal-action', function(e)
         {
             e.preventDefault();
@@ -72,6 +77,36 @@ var blockauth = {
         },
         new: function(title, content, footer)
         {
+            if($('.modal.in').length > 0)
+            {
+                $('.modal').modal('hide');
+                setTimeout(function()
+                {
+                    blockauth.modal.spawn(title, content, footer);
+                }, 750);
+            }
+            else
+            {
+                blockauth.modal.spawn(title, content, footer);
+            }
+        },
+        open: function(id)
+        {
+            if($('.modal.in').length > 0)
+            {
+                $('.modal').modal('hide');
+                setTimeout(function()
+                {
+                    $('#'+id).modal('show');
+                }, 750);
+            }
+            else
+            {
+                $('#'+id).modal('show');
+            }
+        },
+        spawn: function(title, content, footer)
+        {
             if(typeof title == 'undefined' || !title) title = '';
             if(typeof content == 'undefined' || !content) content = '';
             if(typeof footer == 'undefined' || !footer) footer = '';
@@ -83,10 +118,6 @@ var blockauth = {
             if(!footer) $('#default-modal').find('.modal-footer').hide();
             else $('#default-modal').find('.modal-footer').show();
             $('#default-modal').modal('show');
-        },
-        open: function(id)
-        {
-            $('#'+id).modal('show');
         }
     },
     resize: function()
