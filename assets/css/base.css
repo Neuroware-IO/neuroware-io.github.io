@@ -67,6 +67,12 @@ h4.post-title span.date {
     margin: 55px 0 0 0;
     clear: both;
 }
+span.alert.alert-block {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+}
 
 /*
 
