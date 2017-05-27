@@ -1,0 +1,39 @@
+form.wufoo #header {
+    display: none;
+}
+form.wufoo label.desc {
+    color: #EEE;
+    padding: 10px 0;
+}
+form.wufoo .field {
+    background: #444;
+    border: 1px solid #000;
+    color: #AAA;
+    padding: 10px;
+    border-radius: 6px;
+    border: 
+}
+form.wufoo input.submit {
+    background: #000;
+    border: 1px solid #777;
+    border-radius: 8px;
+    color: #EEE;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+form.wufoo input.submit:hover {
+    background: #222;
+    color: #FFF;
+}
+form.wufoo #errorLi,
+form.wufoo .error-container {
+    background: #000;
+    border-color: #777;
+    color: #EEE;
+}
+form.wufoo h2 {
+    color: #FFF;
+    display: block;
+    text-align: center;
+}
