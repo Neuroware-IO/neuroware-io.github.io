@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function()
     {
         var height = $('#sub-content').offset().top;
         e.preventDefault();
-        window.scroll({
+        $(window).scroll({
             top: height,
             behavior: 'smooth' 
         });
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function()
     $('.scroll-up').on('click', function(e)
     {
         e.preventDefault();
-        window.scroll({
+        $(window).scroll({
             top: 0,
             behavior: 'smooth' 
         });
