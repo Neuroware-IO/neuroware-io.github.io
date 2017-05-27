@@ -17,4 +17,9 @@ document.addEventListener('DOMContentLoaded', function()
             behavior: 'smooth' 
         });
     });
+    $('.navbar-toggle').on('click', function(e)
+    {
+        e.preventDefault();
+        $('#bs-example-navbar-collapse-1').toggle(500);
+    });
 });
