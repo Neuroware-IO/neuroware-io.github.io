@@ -18,6 +18,11 @@ a:focus {
 html, body {
     background: #EDEDED;
 }
+.alert-block {
+    display: block;
+    position: relative;
+    text-align: center;
+}
 #header, #footer {
     padding: 50px 0;
     display: block;
