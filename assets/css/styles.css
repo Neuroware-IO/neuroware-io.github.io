@@ -276,8 +276,21 @@ CALLS TO ACTION
 MODAL
 
 */
+.modal-header {
+    background: #EEE;
+    border-bottom: 1px solid #CCC;
+    border-radius: 6px 6px 0 0;
+}
 .modal-body p {
     text-align: justify;
+}
+.modal-body .list-group {
+    margin: 15px 0 0;
+    border-color: #AAA;
+}
+.modal-body .list-group li {
+    background: #EEE;
+    color: #555;
 }
 
 /*
