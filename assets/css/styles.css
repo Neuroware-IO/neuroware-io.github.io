@@ -273,6 +273,18 @@ CALLS TO ACTION
 
 /*
 
+BLOG
+
+*/
+.post .post-title .date {
+    font-size: 11px;
+    line-height: 20px;
+    color: #AAA;
+    float: right;
+}
+
+/*
+
 MODAL
 
 */
@@ -370,3 +382,18 @@ SOCIAL
 .btn-vk{color:#fff;background-color:#587ea3;border-color:rgba(0,0,0,0.2)}.btn-vk:hover,.btn-vk:focus,.btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{color:#fff;background-color:#4a6a89;border-color:rgba(0,0,0,0.2)}
 .btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{background-image:none}
 .btn-vk.disabled,.btn-vk[disabled],fieldset[disabled] .btn-vk,.btn-vk.disabled:hover,.btn-vk[disabled]:hover,fieldset[disabled] .btn-vk:hover,.btn-vk.disabled:focus,.btn-vk[disabled]:focus,fieldset[disabled] .btn-vk:focus,.btn-vk.disabled:active,.btn-vk[disabled]:active,fieldset[disabled] .btn-vk:active,.btn-vk.disabled.active,.btn-vk[disabled].active,fieldset[disabled] .btn-vk.active{background-color:#587ea3;border-color:rgba(0,0,0,0.2)}
+
+/*
+
+RESPONSIVE
+
+*/
+@media only screen and (max-width : 992px) {
+    .post .post-title .date {
+        display: none;
+    }
+    .container.copy p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
