@@ -236,6 +236,10 @@ NAVIGATION
     color: #555;
 }
 
+.list-group.transparent li.list-group-item {
+    border: none;
+}
+
 /*
 
 CALLS TO ACTION
