@@ -421,4 +421,13 @@ RESPONSIVE
         padding-left: 0;
         padding-right: 0;
     }
+    body #header .collapse.navbar-collapse {
+        background: #EEE;
+        padding: 30px 5px;
+        margin: 19px -51px;
+        border-bottom: 1px solid #333;
+    }
+    body #header .collapse.navbar-collapse li.active a {
+        border-bottom: none;
+    }
 }
