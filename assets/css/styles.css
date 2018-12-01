@@ -207,6 +207,9 @@ h4.section b {
     font-size: 18px;
     text-align: justify;
 }
+.container.copy h3.date {
+    font-size: 16px;
+}
 .container.copy .post .post-title {
     text-align: left;
 }
