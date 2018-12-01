@@ -200,6 +200,13 @@ h4.section b {
     font-size: 18px;
     text-align: justify;
 }
+.container.copy .col-md-5 p {
+    display: block;
+    position: relative;
+    padding: 5px 15px 15px 0;
+    font-size: 18px;
+    text-align: justify;
+}
 .container.copy .post .post-title {
     text-align: left;
 }
